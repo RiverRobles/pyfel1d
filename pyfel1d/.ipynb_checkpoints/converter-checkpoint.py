@@ -2,7 +2,7 @@ import numpy as np
 from scipy.special import jv, j0, j1
 from scipy.constants import e, c, physical_constants, m_e, epsilon_0
 Ia = e*c/physical_constants['classical electron radius'][0]
-from fel import OneDFELSolver
+from pyfel1d.fel import OneDFELSolver
 
 class FELScalingConverter:
     """

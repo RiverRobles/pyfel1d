@@ -5,7 +5,7 @@ import numexpr as ne
 from joblib import Parallel, delayed
 import mpmath 
 from scipy.special import jv 
-from particles import ParticleLoader
+from pyfel1d.particles import ParticleLoader
 from scipy.interpolate import CubicSpline
 from numba import njit
 

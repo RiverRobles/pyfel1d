@@ -5,7 +5,7 @@ import numexpr as ne
 from joblib import Parallel, delayed
 import mpmath 
 from scipy.special import jv 
-from particles import ParticleLoader
+from pyfel1d.particles import ParticleLoader
 from scipy.interpolate import CubicSpline
 from numba import njit
 
@@ -89,7 +89,7 @@ class OneDFELSolver:
         else:
             self.Nzeta = len(self.zeta_arr)
 
-    def generate_beam(self, bdes, chirp_arr=0.0, Np=2048, M=4, enforce_bunching=False, rel_bdes_tol=1e-1, slice_espread_function=lambda Np: np.zeros(Np)):
+    def generate_beam(self, bdes, chirp_arr=0.0, Np=2048, M=8, enforce_bunching=False, rel_bdes_tol=1e-1, slice_espread_function=lambda Np: np.zeros(Np)):
         """
         Generate the initial beam parameters.
         
