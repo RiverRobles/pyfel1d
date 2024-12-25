@@ -1,0 +1,36 @@
+package:
+  name: pyfel1d
+  version: "0.1.0"
+
+source:
+  path: .
+
+build:
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -v"
+
+requirements:
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - numpy
+    - scipy
+    - matplotlib
+    - numexpr
+    - joblib
+    - mpmath
+
+test:
+  imports:
+    - main.converter
+    - main.fel
+    - main.particles
+
+about:
+  home: "https://github.com/yourusername/pyfel1d"
+  license: "MIT"
+  summary: "A package for simulating Free-Electron Lasers (FEL) using Python."
+  description: "Detailed description of the FEL simulation package."
+  dev_url: "https://github.com/yourusername/pyfel1d"
