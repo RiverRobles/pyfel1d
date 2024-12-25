@@ -21,6 +21,7 @@ requirements:
     - numexpr
     - joblib
     - mpmath
+    - numba
 
 test:
   imports:
@@ -29,8 +30,8 @@ test:
     - main.particles
 
 about:
-  home: "https://github.com/yourusername/pyfel1d"
+  home: "https://github.com/RiverRobles/pyfel1d"
   license: "MIT"
   summary: "A package for simulating Free-Electron Lasers (FEL) using Python."
   description: "Detailed description of the FEL simulation package."
-  dev_url: "https://github.com/yourusername/pyfel1d"
+  dev_url: "https://github.com/RiverRobles/pyfel1d"

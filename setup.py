@@ -11,5 +11,6 @@ setup(
         'numexpr',
         'joblib',
         'mpmath',
+        'numba',
     ],
 )
